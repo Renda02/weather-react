@@ -4,13 +4,8 @@ function Search() {
   return (
     <div className="Search">
       <form>
-        <input
-          type="text"
-          placeholder="Enter City"
-          autoComplete="off"
-          autoCapitalize="on"
-        />
-        <input type="submit" />
+        <input type="text" placeholder="Enter City" autoComplete="off" />
+        <input type="submit" value="Search" />
       </form>
     </div>
   );
