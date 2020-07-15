@@ -3,7 +3,7 @@ import "./Weather.css";
 import axios from "axios";
 import FormatDate from "./FormatDate";
 
-function Weather() {
+const Weather = () => {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
@@ -62,6 +62,6 @@ function Weather() {
     axios.get(apiUrl).then(handleResponse);
     return "Loading";
   }
-}
+};
 
 export default Weather;
