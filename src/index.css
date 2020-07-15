@@ -1,3 +1,17 @@
 body {
-  font-family: sans-serif;
+  font-family: "Roboto";
+}
+
+.App .Container {
+  text-align: center;
+  border: 0, 9 thin;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  display: block;
+  border-radius: 5px;
+}
+
+.App .Source {
+  text-align: center;
 }

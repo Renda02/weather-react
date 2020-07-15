@@ -1,13 +1,1 @@
-.App .Container {
-  text-align: center;
-  border: 1px solid;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
-  display: block;
-  border-radius: 5px;
-}
 
-.App .Source {
-  text-align: center;
-}

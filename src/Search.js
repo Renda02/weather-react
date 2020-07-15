@@ -1,13 +1,18 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
+import InputBase from "@material-ui/core/InputBase";
+import "./Search.css";
 
 function Search() {
+  
   return (
-    <div className="Search">
-      <form>
-        <input type="text" placeholder="Enter City" autoComplete="off" />
-        <input type="submit" value="Search" />
-      </form>
-    </div>
+  <div> <InputBase placeholder="Enter City…" />
+      <Button variant="contained" color="primary">
+        Search
+      </Button>
+  </div>
+  
+      
   );
 }
 
