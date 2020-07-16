@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
-import Button from "@material-ui/core/Button";
-import InputBase from "@material-ui/core/InputBase";
-
 import WeatherInfo from "./WeatherInfo";
 
 const Weather = (props) => {
@@ -29,7 +26,7 @@ const Weather = (props) => {
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed),
       date: new Date(response.data.dt * 1000),
     });
   }
@@ -44,12 +41,15 @@ const Weather = (props) => {
   if (weatherData.ready) {
     return (
       <div>
-        <form onClick={handleSubmit}>
-          {" "}
-          <InputBase placeholder="Enter City…" onChange={updateCity} />
-          <Button variant="contained" color="primary">
-            Search
-          </Button>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            autoComplete="off"
+            autoFocus="on"
+            placeholder="Enter location"
+            onChange={updateCity}
+          />
+          <input type="submit" value="Search" className="submit" />
         </form>
         <WeatherInfo data={weatherData} />
       </div>

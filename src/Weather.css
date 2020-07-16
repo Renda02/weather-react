@@ -27,3 +27,7 @@ li {
   position: "relative";
   width: 100%;
 }
+
+.Weather canvas {
+  margin: 10px auto;
+}
