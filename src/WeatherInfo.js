@@ -1,6 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcons from "./WeatherIcons";
+import WeatherTemperature from "./WeatherTemperature";
 
 const WeatherInfo = (props) => {
   return (
@@ -17,29 +18,25 @@ const WeatherInfo = (props) => {
       <div className="row">
         <div className="col-6">
           <div className="clearfix weather-temperature">
-            <div class="float-left">
+            <div className="float-left">
               <WeatherIcons code={props.data.icon} />
             </div>
-            <div className="temperature">
-              {props.data.temperature}°<div></div>
-              <div className="degrees"></div>
-              <small>
-                <span>{props.data.descrption}</span>
-              </small>
+            <div className="float-left">
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
+            <span className="text-capitalize">{props.data.description}</span>
           </div>
         </div>
-        <div className="col-6">
-          <ul>
-            <li>
-              Humidity: <span className="humidity">{props.data.humidity} </span>
-              %
-            </li>
-            <li>
-              Wind Speed: <span className="wind">{props.data.wind}</span> km/h
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div className="col-6">
+        <ul>
+          <li>
+            Humidity: <span className="humidity">{props.data.humidity} </span>%
+          </li>
+          <li>
+            Wind Speed: <span className="wind">{props.data.wind}</span> km/h
+          </li>
+        </ul>
       </div>
     </div>
   );
