@@ -34,7 +34,7 @@ const WeatherInfo = (props) => {
             Humidity: <span className="humidity">{props.data.humidity} </span>%
           </li>
           <li>
-            Wind Speed: <span className="wind">{props.data.wind}</span> km/h
+            Wind : <span className="wind">{props.data.wind}</span> km/h
           </li>
         </ul>
       </div>
