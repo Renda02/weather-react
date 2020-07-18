@@ -5,7 +5,7 @@ const ForecastPreview = (props) => {
   function hours() {
     let date = new Date(props.data.dt * 100);
     let hours = date.getHours();
-    return `${hours}:00`;
+    if (hours < 10) return `0${hours}:00`;
   }
 
   function temperature() {
@@ -14,9 +14,11 @@ const ForecastPreview = (props) => {
   }
 
   return (
-    <div className="row">
+    <div className=" WeatherForecast col">
       {hours()}
+      <br />
       <WeatherIcons code={props.data.weather[0].icon} />
+      <br />
       {temperature()}
     </div>
   );

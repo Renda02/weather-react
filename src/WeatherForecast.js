@@ -21,13 +21,22 @@ const WeatherForecast = (props) => {
 
   if (loaded && props.city === forecast.city.name) {
     return (
-      <div className="WeatherForecast row">
-        <ForecastPreview data={forecast.list[0]} />
-        <ForecastPreview data={forecast.list[1]} />
-        <ForecastPreview data={forecast.list[2]} />
-        <ForecastPreview data={forecast.list[3]} />
-        <ForecastPreview data={forecast.list[4]} />
-        <ForecastPreview data={forecast.list[5]} />
+      <div className="Forest">
+        <div className="row">
+          <h4>
+            {" "}
+            <u>Hourly Forecast</u>
+          </h4>
+        </div>
+
+        <div className="WeatherForecast col-2">
+          <ForecastPreview data={forecast.list[0]} />
+          <ForecastPreview data={forecast.list[1]} />
+          <ForecastPreview data={forecast.list[2]} />
+          <ForecastPreview data={forecast.list[3]} />
+          <ForecastPreview data={forecast.list[4]} />
+          <ForecastPreview data={forecast.list[5]} />
+        </div>
       </div>
     );
   } else {

@@ -9,9 +9,8 @@ const WeatherInfo = (props) => {
       {" "}
       <div>
         <h1 className="city"> {props.data.city}</h1>
-        <span className="updated">
+        <span className="date">
           {" "}
-          <small> Last Updated:</small>
           <FormatDate date={props.data.date} />
         </span>
       </div>

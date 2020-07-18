@@ -41,20 +41,21 @@ const Weather = (props) => {
 
   if (weatherData.ready) {
     return (
-      <div>
+      <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
               <input
-                type="text"
+                type="search"
                 autoComplete="off"
                 autoFocus="on"
                 placeholder="Enter location"
+                className="Search"
                 onChange={updateCity}
               />
-            </div>
-            <div className="col-3">
-              <input type="submit" value="Search" className="submit" />
+              <button type="button" classname="btn btn-primary">
+                Search
+              </button>
             </div>
           </div>
         </form>

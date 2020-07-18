@@ -21,7 +21,7 @@ const FormatDate = (props) => {
   }
 
   return (
-    <div>
+    <div className="date">
       {day} {hours}:{min}
     </div>
   );
