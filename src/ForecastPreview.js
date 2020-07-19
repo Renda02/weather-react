@@ -14,11 +14,9 @@ const ForecastPreview = (props) => {
   }
 
   return (
-    <div className=" WeatherForecast col">
+    <div className=" ForecastPreview col-2">
       {hours()}
-      <br />
       <WeatherIcons code={props.data.weather[0].icon} />
-      <br />
       {temperature()}
     </div>
   );

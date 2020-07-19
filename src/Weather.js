@@ -19,7 +19,7 @@ const Weather = (props) => {
   };
 
   function handleResponse(response) {
-    //console.log(response.data);
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -29,6 +29,9 @@ const Weather = (props) => {
       icon: response.data.weather[0].icon,
       wind: Math.round(response.data.wind.speed),
       date: new Date(response.data.dt * 1000),
+      maxTemp: Math.round(response.data.main.temp_max),
+      minTemp: Math.round(response.data.main.temp_min),
+      feelLike: Math.round(response.data.main.feels_like),
     });
   }
 
@@ -53,7 +56,7 @@ const Weather = (props) => {
                 className="Search"
                 onChange={updateCity}
               />
-              <button type="button" classname="btn btn-primary">
+              <button type="button" className="btn btn-primary">
                 Search
               </button>
             </div>

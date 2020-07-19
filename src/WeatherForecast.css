@@ -1,20 +1,25 @@
 h4 {
-  font-size: 20px;
-  margin-top: 40px;
+  font-size: 15px;
+  margin-top: 20px;
 }
-.Forecast {
+
+.ForecastPreview {
+  margin-top: 10px;
+  box-sizing: border-box;
+  color: rgb(33, 37, 41);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  margin: 15px 0 5px 0;
-  padding: 0;
+  justify-content: center;
 }
 
-.Forecast .forecastIcons {
+.col-2 {
+  box-sizing: border-box;
   display: block;
-  margin: 0 auto;
-  padding: 7px 0;
+  margin: 20px;
 }
 
-.Forecast .col {
-  padding: 0;
-  margin: 0;
+.Forecast canvas {
+  display: block;
 }

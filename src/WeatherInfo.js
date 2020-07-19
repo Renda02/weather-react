@@ -5,9 +5,9 @@ import WeatherTemperature from "./WeatherTemperature";
 
 const WeatherInfo = (props) => {
   return (
-    <div>
+    <div className="Weather">
       {" "}
-      <div>
+      <div className="current">
         <h1 className="city"> {props.data.city}</h1>
         <span className="date">
           {" "}
@@ -19,16 +19,22 @@ const WeatherInfo = (props) => {
           <div className="clearfix weather-temperature">
             <div className="float-left">
               <WeatherIcons code={props.data.icon} />
-            </div>
-            <div className="float-left">
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
-            <span className="text-capitalize">{props.data.description}</span>
+            <span className="minMax">
+              {Math.round(props.data.minTemp)}°{""}|{""}
+              {Math.round(props.data.maxTemp)}°
+            </span>
+            <br />
+            <span className="description">{props.data.description}</span>
           </div>
         </div>
       </div>
       <div className="col-6">
         <ul>
+          <li>
+            Feels like:<span className="feels">{props.data.feelsLike}</span>
+          </li>
           <li>
             Humidity: <span className="humidity">{props.data.humidity} </span>%
           </li>
