@@ -25,7 +25,7 @@ const WeatherForecast = (props) => {
         <div className="row">
           <h4>
             {" "}
-            <u>Hourly Forecast</u>
+            <u>What to expect</u>
           </h4>
           <div className=" ForecastPreview row">
             <ForecastPreview data={forecast.list[0]} />

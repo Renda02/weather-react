@@ -33,6 +33,7 @@
   font-weight: 400px;
   line-height: 1.5;
   margin-top: 15px;
+  color: rgb(33, 37, 41);
 }
 
 ul {
@@ -54,6 +55,7 @@ ul {
   line-height: 70px;
   font-size: 45px;
   font-weight: 600;
+  color: rgb(33, 37, 41);
 }
 .Weather .minMax {
   font-size: 18px;
