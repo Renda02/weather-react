@@ -21,7 +21,7 @@ const WeatherInfo = (props) => {
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
             <span className="minMax">
-              {Math.round(props.data.minTemp)}°{""}|{""}
+              {Math.round(props.data.minTemp)}°{""} | {""}
               {Math.round(props.data.maxTemp)}°
             </span>
             <br />
