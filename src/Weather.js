@@ -13,6 +13,11 @@ const Weather = (props) => {
     search();
   };
 
+  const handleCity = (event) => {
+    event.preventDefault();
+    search();
+  };
+
   const updateCity = (event) => {
     event.preventDefault();
     setCity(event.target.value);
@@ -56,7 +61,11 @@ const Weather = (props) => {
                 className="Search"
                 onChange={updateCity}
               />
-              <button type="button" className="btn btn-primary">
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleCity}
+              >
                 Search
               </button>
             </div>
