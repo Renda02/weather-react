@@ -3,9 +3,9 @@ import WeatherIcons from "./WeatherIcons";
 
 const ForecastPreview = (props) => {
   function hours() {
-    let date = new Date(props.data.dt * 100);
+    let date = new Date(props.data.dt * 1000);
     let hours = date.getHours();
-    if (hours < 10) return `0${hours}:00`;
+    return `${hours}:00`;
   }
 
   function temperature() {

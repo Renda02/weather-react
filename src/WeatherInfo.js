@@ -10,7 +10,6 @@ const WeatherInfo = (props) => {
       <div className="current">
         <h1 className="city"> {props.data.city}</h1>
         <span className="date">
-          {" "}
           <FormatDate date={props.data.date} />
         </span>
       </div>
@@ -33,7 +32,7 @@ const WeatherInfo = (props) => {
       <div className="col-6">
         <ul>
           <li>
-            Feels like:<span className="feels">{props.data.feelsLike}</span>
+            Feels like:<span className="feels">{props.data.feelLike}°</span>
           </li>
           <li>
             Humidity: <span className="humidity">{props.data.humidity} </span>%
