@@ -5,7 +5,7 @@ import WeatherTemperature from "./WeatherTemperature";
 
 const WeatherInfo = (props) => {
   return (
-    <div className="Weather">
+    <div className="main">
       {" "}
       <div className="current">
         <h1 className="city"> {props.data.city}</h1>
@@ -29,7 +29,7 @@ const WeatherInfo = (props) => {
           </div>
         </div>
       </div>
-      <div className="col-6">
+      <div className="current-conditions">
         <ul>
           <li>
             Feels like:<span className="feels">{props.data.feelLike}°</span>

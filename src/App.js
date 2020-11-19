@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Pretoria" />
+        <Weather defaultCity="Madrid" />
       </div>
       <footer>
         <a href="https://github.com/Renda02/weather-react" target="blank">

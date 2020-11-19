@@ -1,26 +1,27 @@
 h4 {
-  font-size: 15px;
-  margin-top: 20px;
-  color: rgb(33, 37, 41);
+  font-size: 25px;
+  
+  color: #cfd3ce;
 }
 
 .ForecastPreview {
-  margin-top: 10px;
-  box-sizing: border-box;
-  color: rgb(33, 37, 41);
-  font-size: 13px;
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
-  justify-content: center;
+  padding: 1rem 0;
+  transition: all 300ms ease-in-out;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  color: #cfd3ce;
 }
 
-.col-2 {
-  box-sizing: border-box;
-  display: block;
-  margin: 20px;
+.ForecastPreview h3 {
+  font-size: 18px;
+  text-transform: capitalize;
 }
 
-.Forecast canvas {
-  display: block;
+.ForecastPreview:hover {
+  color: #000;
+
+  cursor: pointer;
+ 
 }

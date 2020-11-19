@@ -13,11 +13,6 @@ const Weather = (props) => {
     search();
   };
 
-  const handleCity = (event) => {
-    event.preventDefault();
-    search();
-  };
-
   const updateCity = (event) => {
     event.preventDefault();
     setCity(event.target.value);
@@ -52,7 +47,7 @@ const Weather = (props) => {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9">
+            <div className="search-box">
               <input
                 type="search"
                 autoComplete="off"
@@ -61,13 +56,6 @@ const Weather = (props) => {
                 className="Search"
                 onChange={updateCity}
               />
-              <button
-                type="button"
-                className="btn btn-primary"
-                onClick={handleCity}
-              >
-                Search
-              </button>
             </div>
           </div>
         </form>

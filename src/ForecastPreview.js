@@ -13,11 +13,20 @@ const ForecastPreview = (props) => {
     return `${temperature}°C`;
   }
 
+   function description() {
+     let description = props.data.weather[0].description;
+     return `${description}`;
+   }
+
   return (
-    <div className=" ForecastPreview col-2">
-      {hours()}
-      <WeatherIcons code={props.data.weather[0].icon} />
-      {temperature()}
+   
+    <div className="ForecastPreview">
+      <div className="col-">
+        <h3>{hours()}</h3>
+         <WeatherIcons code={props.data.weather[0].icon} />
+        <h3>{description()}</h3>
+        <h3>{temperature()}</h3>
+      </div>
     </div>
   );
 };
