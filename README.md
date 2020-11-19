@@ -1,7 +1,10 @@
 React Weather Application
 This is a React weather application. It uses geolocation and the Open Weather Map API to get real weather data and display the current weather conditions for any given location hourly forecast. 
 <br/>
-What I learned:
+
+<u>What I learned:</u>
+<hr/>
+
 HTML5 and CSS3
 JavaScript features such as Functions, Arrays, Loops, Math and ES6 Syntax
 React feactures such as State Management,Components and Props
