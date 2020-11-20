@@ -44,7 +44,8 @@ const Weather = (props) => {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div className="wrapper">
+        <div className="current-info">
         <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="search-box">
@@ -53,13 +54,14 @@ const Weather = (props) => {
                 autoComplete="off"
                 autoFocus="on"
                 placeholder="Enter location"
-                className="Search"
+                className="search-bar"
                 onChange={updateCity}
               />
             </div>
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        </div>
         <WeatherForecast city={weatherData.city} />
       </div>
     );

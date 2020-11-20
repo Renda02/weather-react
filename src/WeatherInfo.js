@@ -13,7 +13,7 @@ const WeatherInfo = (props) => {
           <FormatDate date={props.data.date} />
         </span>
       </div>
-      <div className="row">
+      <div className="row ">
         <div className="col-6">
           <div className="clearfix weather-temperature">
             <div className="float-left">

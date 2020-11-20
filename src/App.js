@@ -8,12 +8,7 @@ function App() {
       <div className="container">
         <Weather defaultCity="Madrid" />
       </div>
-      <footer>
-        <a href="https://github.com/Renda02/weather-react" target="blank">
-          Open Source
-        </a>{" "}
-        coded by Rendani Luvhengo
-      </footer>
+    
     </div>
   );
 }
