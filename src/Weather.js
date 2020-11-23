@@ -53,7 +53,7 @@ const Weather = (props) => {
                 type="search"
                 autoComplete="off"
                 autoFocus="on"
-                placeholder="Enter location"
+                placeholder="Enter your location...."
                 className="search-bar"
                 onChange={updateCity}
               />

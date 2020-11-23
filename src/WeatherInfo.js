@@ -17,7 +17,7 @@ const WeatherInfo = (props) => {
         <div className="col-6">
           <div className="clearfix weather-temperature">
             <div className="float-left">
-              <WeatherIcons code={props.data.icon} />
+              <WeatherIcons code={props.data.icon}  color= '#fff'/>
               <WeatherTemperature celsius={props.data.temperature} />
             </div>
             <span className="minMax">

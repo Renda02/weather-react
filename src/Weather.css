@@ -7,7 +7,7 @@
   
   width: 100%;
   margin-bottom: 0;
-  background-image: url(./images/cold.jpeg);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@
   align-content: center;
   width: 60%;
   padding: 15px;
-  color: #313131;
+  color: #fff;
   font-size: 20px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -37,11 +37,14 @@
   transition: 0.4ms;
 }
 
+
+
 .search-box {
   width: 100%;
   margin-bottom: 30px;
   justify-content: center;
   display: flex;
+  color:#fff;
 }
 
 /*.city h1 {
@@ -81,11 +84,15 @@
   margin: 15px auto;
 }
 
+input::placeholder {
+  color: white;
+}
+
 .temperature {
   display: inline-block;
   font-size: 60px;
   font-weight: 900;
-  background-color: hsla(0, 0%, 100%, 0.15);
+  background-color: hsla(0, 7%, 89%, 0.15);
   border-radius: 16px;
   margin: 30px 0;
   color: #000;
@@ -124,20 +131,21 @@
 
 .Weather canvas {
   margin: 40px auto;
+  fill:#fff;
 }
 
 .date {
   
-  font-size: 30px;
-  font-weight: 600;
-  
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0.5rem 0;
   text-align: center;
 }
 
 .city {
-  color: #000;
+  color: #fff;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
 }

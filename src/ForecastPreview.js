@@ -23,7 +23,7 @@ const ForecastPreview = (props) => {
     <div className="ForecastPreview">
       <div className="col-">
         <h3>{hours()}</h3>
-         <WeatherIcons code={props.data.weather[0].icon} />
+        <WeatherIcons code={props.data.weather[0].icon} />
         <h3>{description()}</h3>
         <h3>{temperature()}</h3>
       </div>
